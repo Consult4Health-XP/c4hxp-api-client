@@ -2,8 +2,6 @@
 
 ## Getting Started
 * [Introduction](README.md)
-* [Executive Brief](executive-brief.md)
-* [Platform Overview](platform-overview.md)
 * [Getting Started Guide](getting-started.md)
 * [Quick Start Examples](quick-start.md)
 
@@ -24,7 +22,6 @@
 * [PHP SDK](../sdks/php/README.md)
 
 ## Integration Guides
-* [Integration Scenarios](integration-scenarios.md)
 * [Partner Integration](integration-guides/partner-integration.md)
 * [E-commerce Platforms](integration-guides/ecommerce-platforms.md)
 * [Testing Your Integration](integration-guides/testing-guide.md)
