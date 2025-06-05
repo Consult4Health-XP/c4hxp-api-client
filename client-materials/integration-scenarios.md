@@ -97,18 +97,19 @@ app.get('/api/health-tests', async (req, res) => {
 
 Automate order processing and result submission.
 
-#### **Implementation: Automated Result Submission**
+#### **Implementation: RESTful API Result Submission**
 
 ```python
 from c4hxp_client import C4HXPInternalClient
+import requests
 
 internal_client = C4HXPInternalClient(
     api_key="c4hxp_live_lab_ghi789",
     api_secret="sk_live_rst456"
 )
 
-def submit_results_to_c4hxp(lims_sample):
-    """Submit sample results to C4HXP"""
+def submit_results_via_api(lims_sample):
+    """Submit sample results via RESTful API - RECOMMENDED"""
     
     c4hxp_results = {
         "kit_barcode": lims_sample.sample_id,
@@ -127,8 +128,48 @@ def submit_results_to_c4hxp(lims_sample):
         }
         c4hxp_results["test_results"].append(result)
     
+    # Real-time API submission
     response = internal_client.results.create(c4hxp_results)
     return response
+
+def submit_results_via_mllp(hl7_message):
+    """Submit HL7 results via MLLP - For enterprise labs"""
+    
+    import socket
+    
+    # HL7 over MLLP connection
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.connect(('mllp.c4hxp.com', 6661))
+    
+    # MLLP framing: <SB>message<EB><CR>
+    mllp_message = f"\x0B{hl7_message}\x1C\x0D"
+    
+    sock.send(mllp_message.encode())
+    ack_response = sock.recv(1024).decode()
+    sock.close()
+    
+    return ack_response
+
+def submit_results_via_sftp(hl7_file_path):
+    """Submit HL7 file via SFTP - Traditional method"""
+    
+    import paramiko
+    
+    sftp_client = paramiko.SSHClient()
+    sftp_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    
+    sftp_client.connect(
+        hostname='sftp.c4hxp.com',
+        username='lab_partner_001',
+        key_filename='/path/to/private_key'
+    )
+    
+    sftp = sftp_client.open_sftp()
+    remote_path = f'/incoming/{os.path.basename(hl7_file_path)}'
+    sftp.put(hl7_file_path, remote_path)
+    
+    sftp.close()
+    sftp_client.close()
 ```
 
 ---

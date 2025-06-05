@@ -26,7 +26,7 @@ Healthcare organizations and ecommerce platforms face significant barriers when 
 | $500K+ development costs | Fraction of build cost |
 | Limited testing options | 50+ test panels available |
 | Manual order processing | Fully automated workflows |
-| Basic result delivery | Professional PDF reports |
+| Basic result delivery | HL7-based results processing with API access |
 | No compliance support | Built-in security & audit trails |
 
 ## 💼 **Key Business Benefits**
@@ -48,6 +48,7 @@ Healthcare organizations and ecommerce platforms face significant barriers when 
 - **📈 Volume Growth**: Access to new customer channels
 - **⚡ Automation**: Reduce manual data entry and communication
 - **🎯 Quality**: Standardized workflows and tracking
+- **🔌 Flexible Connectivity**: Multiple result delivery methods to fit your infrastructure
 
 ## 🏗️ **Platform Capabilities**
 
@@ -62,18 +63,45 @@ Lab Processing → Result Delivery → Ongoing Support
 - ✅ **50+ Test Panels**: Hormone, metabolic, wellness, and specialty testing
 - ✅ **Multi-Tenant Security**: Complete client data isolation
 - ✅ **Real-Time Tracking**: From order to results delivery
-- ✅ **Professional Results**: Branded PDF reports with clinical interpretation
+- ✅ **Flexible Lab Connectivity**: RESTful API push, HL7 over MLLP, SFTP, and cloud storage
+- ✅ **HL7 Results Processing**: Automated parsing and database storage with API access
+- ✅ **Flexible Result Delivery**: PDF reports (when lab-provided) or structured API data
 - ✅ **Automated Notifications**: Email, SMS, and webhook integration
 - ✅ **Enterprise APIs**: RESTful APIs with comprehensive SDKs
 
 ### **Integration Options**
 
+**Real-World Integration Scenarios:**
+
+✅ **EMR/EHR Integration** - Direct integration with electronic medical records  
+✅ **E-commerce Product Catalog** - Add testing products to existing marketplaces  
+✅ **Laboratory LIMS Integration** - Automated order processing and result submission  
+✅ **White-Label Platform** - Complete branded diagnostic testing portal  
+
 | Integration Type | Use Case | Implementation Time |
 |-----------------|----------|-------------------|
+| **EMR/EHR Integration** | Healthcare provider workflows | 2-3 weeks |
+| **E-commerce Catalog** | Health & wellness marketplaces | 1-2 weeks |
+| **LIMS Integration** | Laboratory automation | 2-3 weeks |
+| **White-Label Platform** | Complete branded solution | 3-4 weeks |
 | **Direct API** | Custom applications | 2-3 weeks |
-| **SDK Integration** | Existing platforms | 1-2 weeks |
-| **White-Label** | Complete solution | 3-4 weeks |
 | **Webhook Events** | Real-time updates | 1 week |
+
+### **Laboratory Connectivity Options**
+
+**Multiple integration methods to accommodate any lab infrastructure:**
+
+✅ **RESTful API Push** - Modern JSON/XML endpoints for real-time result submission  
+✅ **HL7 over MLLP** - Industry-standard protocol for enterprise lab networks  
+✅ **SFTP File Transfer** - Secure batch file processing for traditional workflows  
+✅ **Cloud Storage Integration** - Azure Blob compatibility  
+
+| Connection Method | Best For | Processing Speed |
+|------------------|----------|------------------|
+| **RESTful API Push** | Modern labs, real-time needs | Immediate |
+| **HL7 over MLLP** | Hospital networks, enterprise labs | Real-time |
+| **SFTP Transfer** | Traditional labs, batch processing | 15-30 minutes |
+| **Cloud Storage** | Cloud-native labs | 5-15 minutes |
 
 ## 🔐 **Enterprise Security & Compliance**
 
