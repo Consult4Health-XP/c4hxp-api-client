@@ -1,0 +1,18 @@
+MSH|^~\&|LABDAQ|198|||20250515144758||ORU^R01|d8b62951-b43a-47b4-ae85-c6438ce470be|P|2.4
+PID|1||XP00004439|XP00004439|Smith^John^||19850521|M|||123 Main St^^Anytown^IL^62305||5555551234|||||XP00004439||
+ZCI||||
+PV1|1||^^^198^Demo Health Inc.||||9999999999^Demo Health PA^Medical Group|9999999999^Demo Health PA^Medical Group|||||||||||||||||||||||||||||||||||||
+ORC|RE|XP00004439|902984||||||202505120819|LAB||9999999999^Demo Health PA^Medical Group^^^^^N|^^^198^Demo Health Inc.
+OBR|1|XP00004439|902984|9353^Male Hormone Panel (Demo)^||202505120819|202505120000|||~AV|A|||202505141050||9999999999^Demo Health PA^Medical Group^^^^^N|||||2^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^^(555)555-0000^|202505151447|||F||^^^^^F
+OBX|1|NM|9584^Testosterone, Total (Males)^LN||7.52|ng/mL|1.75 - 7.81||||F|||202505151447|2^^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^(555)555-0000^||||||||Demo Labs CLIA#99D9999999 |100 Demo Avenue^Demoville^CA^99999^(555)555-0000
+OBX|2|NM|9568^Sex Hormone-Binding Globulin (SHBG)^LN||19.3|nmol/L|13.3 - 89.5||||F|||202505151447|2^^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^(555)555-0000^||||||||Demo Labs CLIA#99D9999999 |100 Demo Avenue^Demoville^CA^99999^(555)555-0000
+OBX|3|NM|3656^Testosterone, Free (calc)^LN||0.19|ng/mL|0.03 - 0.20||||F|||202505151447|2^^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^(555)555-0000^||||||||Demo Labs CLIA#99D9999999 |100 Demo Avenue^Demoville^CA^99999^(555)555-0000
+OBX|4|NM|9605^Albumin^LN||5.05|g/dL|3.50 - 5.70||||F|||202505151447|2^^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^(555)555-0000^||||||||Demo Labs CLIA#99D9999999 |100 Demo Avenue^Demoville^CA^99999^(555)555-0000
+OBR|2|XP00004439|902984|9502^ADX^||202505120819|202505120000|||~AV|A|||202505141050||9999999999^Demo Health PA^Medical Group^^^^^N|||||2^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^^(555)555-0000^|202505151230|||F||^^^^^F
+NTE|1|L|ADX Card tests were developed and their performance characteristics determined by Demo Labs. 
+NTE|2|L|ADX Card has not been cleared or approved by the FDA.
+NTE|3|L|The laboratory is regulated under CLIA as qualified to perform high-complexity testing.
+NTE|4|L|These tests are used for clinical purposes.
+NTE|5|L|It should not be regarded as investigational or for research.
+NTE|6|L|Tests performed from ADX card samples are meant for screening purposes only and are not intended to diagnose, endorse or recommend any type of medical condition or treatment
+ZEF|1|[REDACTED_PDF_DATA] 

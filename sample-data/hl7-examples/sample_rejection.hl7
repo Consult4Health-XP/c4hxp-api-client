@@ -1,0 +1,8 @@
+MSH|^~\&|LABDAQ|198|||20250522133443||ORU^R01|5f00117a-4416-4924-9afe-9ca4fb039aaa|P|2.4
+PID|1||XP00004925|XP00004925|Doe^John^||19890321|M|||123 Main Street^^Anytown^NJ^12345||5551234567|||||XP00004925||
+ZCI||||
+PV1|1||^^^198^Demo Health Inc.||||9999999999^Demo Medical^Provider|9999999999^Demo Medical^Provider|||||||||||||||||||||||||||||||||||||
+ORC|RE|XP00004925|899695||||||202505020812|LAB||9999999999^Demo Medical^Provider^^^^^N|^^^198^Demo Health Inc.
+OBR|1|XP00004925|899695|9714^Sample Unsuitable for Analysis^||202505020812|202504040000|||~SYS|A|||202505221333||9999999999^Demo Medical^Provider^^^^^N|||||2^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^^(555)123-0000^|202505221334|||F||^^^^^F
+OBX|1|ST|9714^Reason for Sample Rejection^LN||Exceeds Stability||||||F|||202505221334|2^^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^(555)123-0000^||||||||Demo Labs CLIA#99D9999999 |100 Demo Avenue^Demoville^CA^99999^(555)123-0000
+ZEF|1|[REDACTED_PDF_DATA] 

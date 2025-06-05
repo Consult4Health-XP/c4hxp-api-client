@@ -1,0 +1,43 @@
+MSH|^~\&|LABDAQ|198|||20250515103606||ORU^R01|5738250a-3287-4d2e-90a9-ddd830ee3211|P|2.4
+PID|1||XP00004197|XP00004197|Smith^Jane^||19880316|F|||123 Main St^^Anytown^MA^12345||5555555555|||||XP00004197||
+ZCI||||
+PV1|1||^^^198^Demo Health Inc.||||9999999999^Demo Medical^Provider|9999999999^Demo Medical^Provider|||||||||||||||||||||||||||||||||||||
+ORC|RE|XP00004197|899939||||||202505021916|LAB||9999999999^Demo Medical^Provider^^^^^N|^^^198^Demo Health Inc.
+OBR|1|XP00004197|899939|9379^Female Reproductive Health Panel (Demo)^||202505021916|202505020000|||JH|A|||202505051234||9999999999^Demo Medical^Provider^^^^^N|||||2^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^^(800)555-0000^|202505150910|||F||^^^^^F
+OBX|1|ST|6503^Progesterone^LN||<0.1|ng/mL|0.08 - 18.56|L|||F|||202505150910|2^^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^(800)555-0000^||||||||Demo Labs CLIA#99D9999999 |100 Demo Avenue^Demoville^CA^99999^(800)555-0000
+OBX|2|NM|9513^Anti-Mullerian Hormone (AMH)^LN||1.64|ng/mL|0.18 - 5.68||||F|||202505150910|2^^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^(800)555-0000^||||||||Demo Labs CLIA#99D9999999 |100 Demo Avenue^Demoville^CA^99999^(800)555-0000
+OBX|3|NM|9517^Estradiol (Sensitive)^LN||35.0|pg/mL|0.0 - 517.0||||F|||202505150910|2^^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^(800)555-0000^||||||||Demo Labs CLIA#99D9999999 |100 Demo Avenue^Demoville^CA^99999^(800)555-0000
+NTE|||Female Reference Ranges (if applicable):
+NTE|||Normally Menstruating Females
+NTE|||    Early-Follicular Phase                        22 - 115 pg/mL
+NTE|||    Mid-Follicular Phase                          25 - 115 pg/mL
+NTE|||    Mid-Luteal Phase                              37 - 246 pg/mL
+NTE|||    Peri-Ovulatory Phase                          32 - 517 pg/mL
+NTE|||Post-menopausal Females                          <15 -  25 pg/mL
+NTE|||(not on HRT)
+OBX|4|NM|9515^Follicle-Stimulating Hormone (FSH)^LN||6.95|mIU/mL|1.79 - 113.59||||F|||202505150910|2^^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^(800)555-0000^||||||||Demo Labs CLIA#99D9999999 |100 Demo Avenue^Demoville^CA^99999^(800)555-0000
+NTE|||Female Reference Ranges (if applicable):
+NTE|||Normally Menstruating Females
+NTE|||    Mid-Follicular Phase                          3.85 - 8.78 mIU/mL
+NTE|||    Mid-Cycle Peak                                4.54 - 22.51  mIU/mL
+NTE|||    Mid-Luteal Phase                              1.79 - 5.12  mIU/mL
+NTE|||Post-menopausal Females                          16.74 - 113.59 mIU/mL
+NTE|||(not on HRT)
+OBX|5|NM|9519^Luteinizing Hormone (LH)^LN||4.66|mIU/mL|1.20 - 58.64||||F|||202505150910|2^^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^(800)555-0000^||||||||Demo Labs CLIA#99D9999999 |100 Demo Avenue^Demoville^CA^99999^(800)555-0000
+NTE|||Female Reference Ranges (if applicable):
+NTE|||Normally Menstruating Females
+NTE|||    Mid-Follicular Phase                          2.12 - 10.89 mIU/mL
+NTE|||    Mid-Cycle Peak                                19.18 - 103.03  mIU/mL
+NTE|||    Mid-Luteal Phase                              1.20 - 12.86  mIU/mL
+NTE|||Post-menopausal Females                           10.87 - 58.64 mIU/mL
+NTE|||(not on HRT)
+OBX|6|NM|9511^Thyroid Stimulating Hormone (TSH)^LN||2.30|uIU/mL|0.45 - 5.33||||F|||202505150910|2^^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^(800)555-0000^||||||||Demo Labs CLIA#99D9999999 |100 Demo Avenue^Demoville^CA^99999^(800)555-0000
+OBX|7|NM|9566^Dehydroepiandrosterone Sulfate (DHEA-S)^LN||98|ug/dL|23 - 266||||F|||202505150910|2^^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^(800)555-0000^||||||||Demo Labs CLIA#99D9999999 |100 Demo Avenue^Demoville^CA^99999^(800)555-0000
+OBR|2|XP00004197|899939|9502^ADX^||202505021916|202505020000|||~AV|A|||202505051234||9999999999^Demo Medical^Provider^^^^^N|||||2^Demo Labs CLIA#99D9999999 ^100 Demo Avenue^Demoville^CA^99999^^(800)555-0000^|202505061351|||F||^^^^^F
+NTE|1|L|ADX Card tests were developed and their performance characteristics determined by Demo Labs. 
+NTE|2|L|ADX Card has not been cleared or approved by the FDA.
+NTE|3|L|The laboratory is regulated under CLIA as qualified to perform high-complexity testing.
+NTE|4|L|These tests are used for clinical purposes.
+NTE|5|L|It should not be regarded as investigational or for research.
+NTE|6|L|Tests performed from ADX card samples are meant for screening purposes only and are not intended to diagnose, endorse or recommend any type of medical condition or treatment
+ZEF|1|[REDACTED_PDF_DATA] 

@@ -1,0 +1,23 @@
+{
+  "recipient": {
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john.doe@example.com",
+    "phone": "+1234567890",
+    "address": {
+      "street1": "123 Main Street",
+      "street2": "Apt 4B",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345",
+      "country": "US"
+    }
+  },
+  "kit_types": ["hormone_panel"],
+  "shipping_method": "standard",
+  "notes": "Patient prefers morning delivery",
+  "metadata": {
+    "patient_id": "patient_12345",
+    "provider_ref": "ref_abc123"
+  }
+} 

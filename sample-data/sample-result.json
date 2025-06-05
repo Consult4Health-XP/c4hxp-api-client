@@ -1,0 +1,53 @@
+{
+  "id": "result_abc123def456",
+  "order_id": "order_789xyz",
+  "kit_barcode": "XP00012345",
+  "status": "completed",
+  "test_type": "hormone_panel",
+  "created_at": "2024-01-15T10:30:00Z",
+  "completed_at": "2024-01-18T14:45:00Z",
+  "patient": {
+    "first_name": "John",
+    "last_name": "Doe",
+    "date_of_birth": "1985-03-15"
+  },
+  "results": [
+    {
+      "test_code": "9584",
+      "test_name": "Testosterone, Total (Males)",
+      "value": 7.52,
+      "unit": "ng/mL",
+      "reference_range": "1.75 - 7.81",
+      "status": "normal",
+      "flags": []
+    },
+    {
+      "test_code": "9568",
+      "test_name": "Sex Hormone-Binding Globulin (SHBG)",
+      "value": 19.3,
+      "unit": "nmol/L",
+      "reference_range": "13.3 - 89.5",
+      "status": "normal",
+      "flags": []
+    },
+    {
+      "test_code": "3656",
+      "test_name": "Testosterone, Free (calc)",
+      "value": 0.19,
+      "unit": "ng/mL",
+      "reference_range": "0.03 - 0.20",
+      "status": "normal",
+      "flags": []
+    }
+  ],
+  "pdf_url": "https://api.c4hxp.com/v2/public/results/result_abc123def456/pdf",
+  "lab_info": {
+    "name": "Demo Labs",
+    "clia_number": "99D9999999",
+    "address": "100 Demo Avenue, Demoville, CA 99999"
+  },
+  "provider_info": {
+    "name": "Demo Medical Provider",
+    "npi": "9999999999"
+  }
+} 
