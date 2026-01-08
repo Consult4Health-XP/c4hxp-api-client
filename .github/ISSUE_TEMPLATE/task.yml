@@ -1,0 +1,28 @@
+name: Task
+description: Work item that is not a bug or feature
+title: "[Task]: "
+labels: ["task", "needs-triage"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What needs to be done?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope / Steps
+      description: Outline the steps or scope
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of Done
+      value: |
+        - [ ]
+        - [ ]
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Links
