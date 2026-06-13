@@ -78,7 +78,7 @@ The C4HXP API is organized around REST principles with predictable resource-orie
 ### Base URL
 ```
 Production:  https://api.c4hxp.com/v2/public/
-Staging:     https://staging.api.c4hxp.com/v2/public/
+Staging:     https://api.staging.consult4healthxp.com/v2/public/
 ```
 
 ### Key Features
@@ -210,7 +210,7 @@ Test your integration safely in our staging environment:
 client = C4HXPClient(
     api_key="c4hxp_test_your_key",
     api_secret="your_test_secret",
-    base_url="https://staging.api.c4hxp.com/v2/public/"
+    base_url="https://api.staging.consult4healthxp.com"
 )
 ```
 
@@ -318,4 +318,4 @@ Ready to start integrating? Here's your roadmap:
 
 ---
 
-**Need immediate help?** Check our [troubleshooting guide](troubleshooting.md) or [contact support](mailto:api-support@c4hxp.com). 
+**Need immediate help?** Check our [troubleshooting guide](troubleshooting.md) or [contact support](mailto:api-support@c4hxp.com).

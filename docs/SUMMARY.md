@@ -12,6 +12,7 @@
 
 ## API Reference
 * [API Reference](api-reference.md)
+* [Staging Compatibility](staging.md)
 * [Rate Limits](rate-limits.md)
 * [Error Handling](error-handling.md)
 * [Webhooks](webhooks.md)
@@ -43,4 +44,4 @@
 * [Troubleshooting](troubleshooting.md)
 * [FAQ](faq.md)
 * [Changelog](../CHANGELOG.md)
-* [Support](support.md) 
+* [Support](support.md)
