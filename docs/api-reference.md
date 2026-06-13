@@ -7,7 +7,7 @@ Complete reference for the C4HXP Laboratory Management API.
 | Environment | URL | Use Case |
 |-------------|-----|----------|
 | Production | `https://api.c4hxp.com/v2/public/` | Live integrations |
-| Staging | `https://staging.api.c4hxp.com/v2/public/` | Testing and development |
+| Staging | `https://api.staging.consult4healthxp.com/v2/public/` | Testing and development |
 | Development | Provided by C4HXP team | Integration development |
 
 ## Authentication
@@ -561,4 +561,4 @@ The API uses standard HTTP status codes:
 | `processing` | Sample being processed |
 | `completed` | Results available |
 | `failed` | Processing failed |
-| `cancelled` | Kit cancelled 
+| `cancelled` | Kit cancelled

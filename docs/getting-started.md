@@ -73,8 +73,8 @@ from c4hxp_client import C4HXPClient
 client = C4HXPClient(
     api_key="your_key_id",
     api_secret="your_secret",
-    # Use sandbox for testing
-    base_url="https://sandbox-api.c4hxp.com"  # Optional
+    # Use staging for testing
+    base_url="https://api.staging.consult4healthxp.com"  # Optional
 )
 ```
 
@@ -85,8 +85,8 @@ import { C4HXPClient } from '@c4hxp/api-client';
 const client = new C4HXPClient({
     apiKey: 'your_key_id',
     apiSecret: 'your_secret',
-    // Use sandbox for testing
-    baseUrl: 'https://sandbox-api.c4hxp.com'  // Optional
+    // Use staging for testing
+    baseUrl: 'https://api.staging.consult4healthxp.com'  // Optional
 });
 ```
 
@@ -100,8 +100,8 @@ use C4HXP\Client\C4HXPClient;
 $client = new C4HXPClient([
     'api_key' => 'your_key_id',
     'api_secret' => 'your_secret',
-    // Use sandbox for testing
-    'base_url' => 'https://sandbox-api.c4hxp.com'  // Optional
+    // Use staging for testing
+    'base_url' => 'https://api.staging.consult4healthxp.com'  // Optional
 ]);
 ```
 
@@ -127,12 +127,12 @@ try:
         },
         "kit_types": ["hormone_panel"]
     })
-    
+
     print(f"Order created successfully!")
     print(f"Order ID: {order['id']}")
     print(f"Order Number: {order['order_number']}")
     print(f"Status: {order['status']}")
-    
+
 except Exception as e:
     print(f"Error creating order: {e}")
 ```
@@ -157,12 +157,12 @@ try {
         },
         kitTypes: ['hormone_panel']
     });
-    
+
     console.log('Order created successfully!');
     console.log(`Order ID: ${order.id}`);
     console.log(`Order Number: ${order.orderNumber}`);
     console.log(`Status: ${order.status}`);
-    
+
 } catch (error) {
     console.error('Error creating order:', error);
 }
@@ -227,7 +227,7 @@ webhook = client.webhooks.create({
     "url": "https://your-app.com/webhooks/c4hxp",
     "events": [
         "order.created",
-        "order.shipped", 
+        "order.shipped",
         "kit.registered",
         "result.available"
     ],
@@ -283,7 +283,7 @@ print(f"Reset time: {rate_limit['reset_time']}")
 # .env file
 C4HXP_API_KEY=your_key_id
 C4HXP_API_SECRET=your_secret
-C4HXP_BASE_URL=https://sandbox-api.c4hxp.com
+C4HXP_BASE_URL=https://api.staging.consult4healthxp.com
 ```
 
 ```python
@@ -298,10 +298,10 @@ client = C4HXPClient(
 ```
 
 ### Development vs Production
-- **Sandbox**: `https://sandbox-api.c4hxp.com`
+- **Staging**: `https://api.staging.consult4healthxp.com`
 - **Production**: `https://api.c4hxp.com`
 
-Use sandbox for all development and testing!
+Use staging for all development and testing with non-production keys and test data.
 
 ## Next Steps
 
@@ -322,4 +322,4 @@ Need help? We're here to assist:
 
 ---
 
-**Ready to integrate?** Start with our [Python examples](../examples/python/) or [JavaScript examples](../examples/javascript/)! 
+**Ready to integrate?** Start with our [Python examples](../examples/python/) or [JavaScript examples](../examples/javascript/)!

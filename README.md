@@ -214,16 +214,18 @@ Supported events:
 
 ## 🧪 Testing
 
-### Sandbox Environment
-Use the sandbox environment for testing:
+### Staging Environment
+Use the staging environment for testing:
 
 ```python
 client = C4HXPClient(
     api_key="c4hxp_test_your_key_id",
     api_secret="your_test_secret",
-    base_url="https://sandbox-api.c4hxp.com"
+    base_url="https://api.staging.consult4healthxp.com"
 )
 ```
+
+See [Staging Compatibility](docs/staging.md) for the current staging host, required key separation, and validation commands.
 
 ### Test Data
 The `sample-data/` directory contains example requests and responses for testing your integration.
@@ -245,4 +247,4 @@ See [CHANGELOG.md](CHANGELOG.md) for version history and updates.
 
 ---
 
-**Need help getting started?** Check out our [Getting Started Guide](docs/getting-started.md) or contact our support team. 
+**Need help getting started?** Check out our [Getting Started Guide](docs/getting-started.md) or contact our support team.

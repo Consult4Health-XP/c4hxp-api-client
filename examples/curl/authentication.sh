@@ -3,12 +3,13 @@
 #
 # Prerequisites:
 # - Set environment variables: C4HXP_API_KEY, C4HXP_API_SECRET
+# - Optional: set C4HXP_BASE_URL for staging, for example https://api.staging.consult4healthxp.com
 # - Or replace the variables below with your actual credentials
 
 # Configuration
 API_KEY="${C4HXP_API_KEY:-your_key_id}"
 API_SECRET="${C4HXP_API_SECRET:-your_secret}"
-BASE_URL="${C4HXP_BASE_URL:-https://sandbox-api.c4hxp.com}"
+BASE_URL="${C4HXP_BASE_URL:-https://api.staging.consult4healthxp.com}"
 
 # Colors for output
 RED='\033[0;31m'
@@ -25,7 +26,7 @@ if [ "$API_KEY" = "your_key_id" ] || [ "$API_SECRET" = "your_secret" ]; then
     echo -e "${RED}❌ Please set your API credentials:${NC}"
     echo "export C4HXP_API_KEY=your_actual_key_id"
     echo "export C4HXP_API_SECRET=your_actual_secret"
-    echo "export C4HXP_BASE_URL=https://sandbox-api.c4hxp.com"
+    echo "export C4HXP_BASE_URL=https://api.staging.consult4healthxp.com"
     exit 1
 fi
 
@@ -123,7 +124,7 @@ body=$(echo "$response" | sed '/HTTP_STATUS/d')
 if [ "$http_status" = "201" ]; then
     echo -e "${GREEN}✅ Order created successfully!${NC}"
     echo "$body" | jq '.' 2>/dev/null || echo "$body"
-    
+
     # Extract order ID for next test
     ORDER_ID=$(echo "$body" | jq -r '.id' 2>/dev/null)
     if [ "$ORDER_ID" != "null" ] && [ "$ORDER_ID" != "" ]; then
@@ -159,7 +160,7 @@ if [ ! -z "$ORDER_ID" ] && [ "$ORDER_ID" != "null" ]; then
         echo -e "${RED}❌ Failed to get order. Status: $http_status${NC}"
         echo "$body"
     fi
-    
+
     echo ""
     echo "----------------------------------------"
     echo ""
@@ -194,4 +195,4 @@ echo "1. Try the other example scripts:"
 echo "   - ./create_order.sh"
 echo "   - ./get_results.sh"
 echo "2. Explore the Python examples in ../python/"
-echo "3. Set up webhooks for real-time notifications" 
+echo "3. Set up webhooks for real-time notifications"

@@ -45,7 +45,7 @@ Different API key types have different permissions and rate limits:
 - **Scopes**: Order management, kit tracking, result access
 - **Use Case**: EHR integrations, partner portals
 
-### E-commerce Keys  
+### E-commerce Keys
 - **Purpose**: Online marketplaces and e-commerce platforms
 - **Rate Limit**: 500 requests/hour
 - **Scopes**: Order creation, basic tracking
@@ -77,8 +77,8 @@ API keys are assigned specific scopes that control access to different endpoints
 - **Key Prefix**: `c4hxp_live_*`
 - **Use**: Live customer data and transactions
 
-### Staging Environment  
-- **Base URL**: `https://staging.api.c4hxp.com/v2/public/`
+### Staging Environment
+- **Base URL**: `https://api.staging.consult4healthxp.com/v2/public/`
 - **Key Prefix**: `c4hxp_test_*`
 - **Use**: Integration testing with test data
 
@@ -98,13 +98,13 @@ class C4HXPClient:
         self.key_id = key_id
         self.secret = secret
         self.base_url = base_url or "https://api.c4hxp.com/v2/public/"
-        
+
     def _headers(self):
         return {
             "Authorization": f"Api-Key {self.key_id}:{self.secret}",
             "Content-Type": "application/json"
         }
-    
+
     def get_kit_types(self):
         response = requests.get(
             f"{self.base_url}catalog/kit-types",
@@ -130,14 +130,14 @@ class C4HXPClient {
         this.secret = secret;
         this.baseUrl = baseUrl || 'https://api.c4hxp.com/v2/public/';
     }
-    
+
     _headers() {
         return {
             'Authorization': `Api-Key ${this.keyId}:${this.secret}`,
             'Content-Type': 'application/json'
         };
     }
-    
+
     async getKitTypes() {
         const response = await axios.get(`${this.baseUrl}catalog/kit-types`, {
             headers: this._headers()
@@ -162,20 +162,20 @@ class C4HXPClient {
     private $keyId;
     private $secret;
     private $baseUrl;
-    
+
     public function __construct($keyId, $secret, $baseUrl = null) {
         $this->keyId = $keyId;
         $this->secret = $secret;
         $this->baseUrl = $baseUrl ?: 'https://api.c4hxp.com/v2/public/';
     }
-    
+
     private function headers() {
         return [
             'Authorization: Api-Key ' . $this->keyId . ':' . $this->secret,
             'Content-Type: application/json'
         ];
     }
-    
+
     public function getKitTypes() {
         $curl = curl_init();
         curl_setopt_array($curl, [
@@ -183,10 +183,10 @@ class C4HXPClient {
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_HTTPHEADER => $this->headers()
         ]);
-        
+
         $response = curl_exec($curl);
         curl_close($curl);
-        
+
         return json_decode($response, true);
     }
 }
@@ -289,7 +289,7 @@ def make_request(client, url):
 ```json
 {
   "error": {
-    "code": "FORBIDDEN", 
+    "code": "FORBIDDEN",
     "message": "Insufficient permissions for this resource",
     "details": {
       "required_scope": "orders:write",
@@ -314,7 +314,7 @@ def make_request(client, url):
     "message": "Too many requests",
     "details": {
       "limit": 1000,
-      "window": "1 hour", 
+      "window": "1 hour",
       "reset_at": "2024-01-15T11:00:00Z"
     }
   }
@@ -368,4 +368,4 @@ If you experience authentication issues:
 - **Email**: api-support@c4hxp.com
 - **Documentation**: [API Reference](api-reference.md)
 - **Status**: https://status.c4hxp.com
-- **Partner Portal**: https://partners.c4hxp.com 
+- **Partner Portal**: https://partners.c4hxp.com
